@@ -3,7 +3,12 @@ import React from "react";
 const Legend = ({ legendItems }) => {
   console.log(legendItems);
   return (
-    <div style={{ display: "flex", alignItems: "stretch" }}>
+    <div
+      style={{
+        display: "flex",
+        alignItems: "stretch",
+      }}
+    >
       {legendItems.map((item, index) => (
         <div
           key={index}
@@ -17,7 +22,7 @@ const Legend = ({ legendItems }) => {
             color: item.textColor,
             height: "10vh",
             fontWeight: "bolder",
-            fontSize: "0.75rem",
+            fontSize: "0.70rem",
           }}
         >
           <span>{item.title}</span>
