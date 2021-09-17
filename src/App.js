@@ -1,11 +1,13 @@
-import React from 'react';
-import Covid19 from './components/Covid19'
-
+import React from "react";
+import Covid19 from "./components/Covid19";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Covid19 />
+      <div className="container">
+        <Covid19 />
+      </div>
     </div>
   );
 }

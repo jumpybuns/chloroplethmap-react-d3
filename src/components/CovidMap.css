@@ -1,3 +1,51 @@
 .leaflet-container {
-  background-color: rgb(160, 255, 245);
+  background-color: rgb(89, 222, 255);
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  margin: 1%;
+  background: white;
+  box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
+}
+
+.legend {
+  box-sizing: content-box;
+  border-radius: 10px;
+}
+
+.loading-title {
+  background: white;
+  animation: myAnim 1s ease 0s 1 normal forwards;
+}
+.loading-image {
+  border-radius: 10px;
+  animation: myAnim2 1.5s ease 0s 1 normal forwards;
+}
+
+@keyframes myAnim {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes myAnim2 {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./CovidMap.css";
 
 const Loading = () => {
   return (
@@ -6,19 +7,13 @@ const Loading = () => {
       style={{
         height: "100vh",
         display: "flex",
+        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
-      <div className="spinner-grow text-success" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-      <div className="spinner-grow text-danger" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
-      <div className="spinner-grow text-info" role="status">
-        <span className="visually-hidden">Loading...</span>
-      </div>
+      <h1 className="loading-title">CONFIRMED COVID-19 CASES WORLDWIDE</h1>
+      <img className="loading-image" src="/virus.jpg" alt="virus" />{" "}
     </div>
   );
 };

@@ -7,6 +7,7 @@ import legendItems from "../entities/LegendItems";
 
 const Covid = () => {
   const [countries, setCountries] = useState([]);
+  const [loading, setLoading] = useState(true);
   const legendItemsInReverse = [...legendItems].reverse();
 
   const load = () => {
@@ -15,18 +16,21 @@ const Covid = () => {
   };
 
   useEffect(load, []);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 5000);
+  }, []);
+
   return (
     <>
-      <div>
-        {countries.length === 0 ? (
-          <Loading />
-        ) : (
-          <div>
-            <CovidMap countries={countries} />{" "}
-            <Legend legendItems={legendItemsInReverse} />
-          </div>
-        )}
-      </div>
+      {loading === false ? (
+        <div>
+          <CovidMap countries={countries} />{" "}
+          <Legend legendItems={legendItemsInReverse} />
+        </div>
+      ) : (
+        <Loading />
+      )}
     </>
   );
 };

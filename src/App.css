@@ -1,20 +1,17 @@
-html,
-body {
-  min-height: 100%;
+@font-face {
+  font-family: "Bookman";
+  src: url(./fonts/BookmanOldStyle.ttc);
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.App {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Bookman";
+  color: black;
+  box-sizing: border-box;
 }
 
-svg {
-  background-color: whitesmoke;
-}
-
-#canvas {
-  min-width: 1000px;
-  min-height: 600px;
+.container {
+  box-sizing: content-box;
 }

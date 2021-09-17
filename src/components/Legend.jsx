@@ -1,9 +1,11 @@
 import React from "react";
+import "./CovidMap.css";
 
 const Legend = ({ legendItems }) => {
   console.log(legendItems);
   return (
     <div
+      className="legend"
       style={{
         display: "flex",
         alignItems: "stretch",
@@ -13,10 +15,13 @@ const Legend = ({ legendItems }) => {
         <div
           key={index}
           style={{
+            boxSizing: "content-box",
             backgroundColor: item.color,
             flex: 1,
             display: "flex",
             alignContent: "center",
+            border: "1px solid black",
+            borderRadius: "10px",
             alignItems: "center",
             justifyContent: "center",
             color: item.textColor,
