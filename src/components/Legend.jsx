@@ -2,7 +2,7 @@ import React from "react";
 import "./CovidMap.css";
 
 const Legend = ({ legendItems }) => {
-  console.log(legendItems);
+
   return (
     <div
       className="legend"
