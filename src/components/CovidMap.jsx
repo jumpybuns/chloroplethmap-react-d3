@@ -20,7 +20,7 @@ const CovidMap = ({ countries }) => {
 
   return (
     <div className="container">
-      <h1 className="title"> Number of Confirmed COVID-19 Cases</h1>
+      <h1 className="title"> Click Country to See Number of Confirmed COVID-19 Cases</h1>
       <MapContainer style={{ height: "75vh" }} zoom={2} center={[20, 0]}>
         <GeoJSON
           data={countries}

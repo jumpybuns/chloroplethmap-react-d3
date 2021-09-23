@@ -5,6 +5,7 @@
 
 .title {
   display: flex;
+  font-size: 2rem;
   justify-content: center;
   box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
@@ -12,9 +13,6 @@
   border-radius: 10px;
   margin: 1%;
   background: white;
-  box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
-  -webkit-box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 28px 27px -12px rgba(0, 0, 0, 0.75);
 }
 
 .legend {
